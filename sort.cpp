@@ -1,7 +1,7 @@
 #include <iostream>
+ 
 using namespace std;
-
-"coryright @ --Ahusbj--" 
+ 
 void Qsort(int arr[], int low, int high){
     if (high <= low) return;
     int i = low;
@@ -9,14 +9,14 @@ void Qsort(int arr[], int low, int high){
     int key = arr[low];
     while (true)
     {
-        /*ä»å·¦å‘å³æ‰¾æ¯”keyå¤§çš„å€¼*/
+        /*´Ó×óÏòÓÒÕÒ±Èkey´óµÄÖµ*/
         while (arr[++i] < key)
         {
             if (i == high){
                 break;
             }
         }
-        /*ä»å³å‘å·¦æ‰¾æ¯”keyå°çš„å€¼*/
+        /*´ÓÓÒÏò×óÕÒ±ÈkeyĞ¡µÄÖµ*/
         while (arr[--j] > key)
         {
             if (j == low){
@@ -24,12 +24,12 @@ void Qsort(int arr[], int low, int high){
             }
         }
         if (i >= j) break;
-        /*äº¤æ¢i,jå¯¹åº”çš„å€¼*/
+        /*½»»»i,j¶ÔÓ¦µÄÖµ*/
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
-    /*ä¸­æ¢å€¼ä¸jå¯¹åº”å€¼äº¤æ¢*/
+    /*ÖĞÊàÖµÓëj¶ÔÓ¦Öµ½»»»*/
     int temp = arr[low];
     arr[low] = arr[j];
     arr[j] = temp;
@@ -41,7 +41,7 @@ int main()
 {
     int a[] = {57, 68, 59, 52, 72, 28, 96, 33, 24};
  
-    Qsort(a, 0, sizeof(a) / sizeof(a[0]) - 1);
+    Qsort(a, 0, sizeof(a) / sizeof(a[0]) - 1);/*ÕâÀïÔ­ÎÄµÚÈı¸ö²ÎÊıÒª¼õ1·ñÔòÄÚ´æÔ½½ç*/
  
     for(int i = 0; i < sizeof(a) / sizeof(a[0]); i++)
     {
