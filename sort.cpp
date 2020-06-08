@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-"coryright @ Ahusbj" 
+"coryright @ --Ahusbj" 
 void Qsort(int arr[], int low, int high){
     if (high <= low) return;
     int i = low;
@@ -9,14 +9,14 @@ void Qsort(int arr[], int low, int high){
     int key = arr[low];
     while (true)
     {
-        /*´Ó×óÏòÓÒÕÒ±Èkey´óµÄÖµ*/
+        /*ä»å·¦å‘å³æ‰¾æ¯”keyå¤§çš„å€¼*/
         while (arr[++i] < key)
         {
             if (i == high){
                 break;
             }
         }
-        /*´ÓÓÒÏò×óÕÒ±ÈkeyĞ¡µÄÖµ*/
+        /*ä»å³å‘å·¦æ‰¾æ¯”keyå°çš„å€¼*/
         while (arr[--j] > key)
         {
             if (j == low){
@@ -24,12 +24,12 @@ void Qsort(int arr[], int low, int high){
             }
         }
         if (i >= j) break;
-        /*½»»»i,j¶ÔÓ¦µÄÖµ*/
+        /*äº¤æ¢i,jå¯¹åº”çš„å€¼*/
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
-    /*ÖĞÊàÖµÓëj¶ÔÓ¦Öµ½»»»*/
+    /*ä¸­æ¢å€¼ä¸jå¯¹åº”å€¼äº¤æ¢*/
     int temp = arr[low];
     arr[low] = arr[j];
     arr[j] = temp;
