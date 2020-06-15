@@ -3,7 +3,8 @@ using namespace std;
 
 "coryright @ --Ahusbj--"
 ///branch 
- 
+
+1
 int main()
 {
     int a[] = {57, 68, 59, 52, 72, 28, 96, 33, 24};
