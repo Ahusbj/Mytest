@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-1223技术的后方可收到货
+1223
 "coryright @ --Ahusbj--" 
 void Qsort(int arr[], int low, int high){
     if (high <= low) return;
