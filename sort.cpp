@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-"coryright @ --Ahusbj--" 
+"coryright @ --Ahusbj--" ————11
 void Qsort(int arr[], int low, int high){
     if (high <= low) return;
     int i = low;
